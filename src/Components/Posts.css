@@ -1,0 +1,60 @@
+.posts-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding:10px;
+    margin: 10px;
+    color: rgb(99, 99, 95);
+}
+
+
+.upper-row, .lower-row {
+    display: flex;
+    justify-content:space-around;
+    margin-top:40px;
+}
+
+.upper-row .List, .lower-row .List {
+margin: 2px;
+padding: 2px;
+background-color: #fff;
+
+    max-width: 200px;
+  border-radius: 5px;
+  border:2px solid  rgb(99, 99, 95,0.2);
+
+}
+
+.List h1{
+text-align: center;
+}
+
+.List ul {
+    text-decoration: none;
+   list-style: none;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+/* .List ul li {
+    
+  ;
+} */
+
+.List ul li a {
+    display: block;
+    text-decoration: none;
+    color:  rgb(99, 99, 95);
+    font-size: 15px;
+    background-color: #f4f1ea;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 3px;
+    overflow:hidden;
+    
+}
+
+.List ul li a:hover{
+    background-color: #d3cfc6;
+  
+}

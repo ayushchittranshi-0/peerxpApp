@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding:10px;
+    margin: 10px;
+    color: rgb(99, 99, 95);
+}
+
+.broken-links {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.broken-links h2 {
+    margin:20px;
+    text-align: center;
+}
