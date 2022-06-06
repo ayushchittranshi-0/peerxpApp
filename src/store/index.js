@@ -6,6 +6,7 @@ const initialDashboardState = {
   tags: [],
   top5post: [],
   pages: [],
+  loading: false,
 };
 
 const DashboardSlice = createSlice({
@@ -26,6 +27,9 @@ const DashboardSlice = createSlice({
     },
     assignPages(state, action) {
       state.pages = action.payload;
+    },
+    assignLoading(state, action) {
+      state.loading = action.payload;
     },
   },
 });
@@ -76,7 +80,8 @@ const PostsPageSlice = createSlice({
 
 const initialLinksPageState = {
   urls: [],
-  lengthInternalLinks: 0,
+  intUrl: [],
+  brokenUrl: [],
 };
 
 const LinkPageSlice = createSlice({
@@ -86,11 +91,12 @@ const LinkPageSlice = createSlice({
     assignUrls(state, action) {
       state.urls = [...state.urls, ...action.payload];
     },
-    assignBrokenLinks(state, action) {
-      state.brokenLinks = action.payload;
+    assignBrokenUrl(state, action) {
+      state.brokenUrl = [...state.brokenUrl, action.payload];
     },
-    assignLengthInternalLinks(state, action) {
-      state.lengthInternalLinks = action.payload;
+
+    assignIntUrl(state, action) {
+      state.intUrl = [...state.intUrl, ...action.payload];
     },
   },
 });

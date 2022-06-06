@@ -58,3 +58,13 @@ text-align: center;
     background-color: #d3cfc6;
   
 }
+
+#ListL, #ListL2 {
+    margin-top: 20px;
+    min-width:300px;
+}
+
+
+.lower-row div h1 {
+    text-align: center;
+}

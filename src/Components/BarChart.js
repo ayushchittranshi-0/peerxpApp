@@ -42,7 +42,7 @@ const BarChart = ({ posts }) => {
 
   return (
     <div>
-      {posts && (
+      {posts.length > 0 && (
         <Bar
           data={{
             labels: labelsMonth,

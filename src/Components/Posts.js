@@ -103,8 +103,6 @@ const Posts = () => {
             </ul>
           )}
         </div>
-      </div>
-      <div className="lower-row">
         <div className="List">
           <h1>Too Short Posts</h1>
 
@@ -147,6 +145,8 @@ const Posts = () => {
             </ul>
           )}
         </div>
+      </div>
+      <div className="lower-row">
         <div className="List">
           <h1>Posts With Too Long Meta</h1>
           {!tooLongMeta && <p>No Links Found</p>}
